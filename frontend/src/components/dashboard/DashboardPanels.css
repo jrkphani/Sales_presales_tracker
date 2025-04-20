@@ -1,0 +1,179 @@
+.panel-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #2d3748;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chart-instruction {
+  font-size: 0.9rem;
+  color: #718096;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Region Panel */
+.region-summary, .stage-summary, .agent-summary {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.region-title, .stage-title, .agent-title {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #2d3748;
+}
+
+.region-metrics, .stage-metrics, .agent-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.region-metric, .stage-metric, .agent-metric {
+  flex: 1 1 200px;
+  background-color: #f8fafc;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.metric-label {
+  font-size: 0.9rem;
+  color: #718096;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Deal Stages */
+.deal-stage {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.deal-stage.lead {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+.deal-stage.qualified {
+  background-color: #bee3f8;
+  color: #2b6cb0;
+}
+
+.deal-stage.proposal {
+  background-color: #c6f6d5;
+  color: #2f855a;
+}
+
+.deal-stage.negotiation {
+  background-color: #feebc8;
+  color: #c05621;
+}
+
+.deal-stage.closed-won {
+  background-color: #9ae6b4;
+  color: #276749;
+}
+
+/* Pipeline breakdown */
+.pipeline-stage-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pipeline-stage {
+  background-color: #f8fafc;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.stage-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.stage-name {
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.stage-count {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.stage-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 10px;
+}
+
+.stage-progress-bar {
+  height: 8px;
+  background-color: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.stage-progress {
+  height: 100%;
+  border-radius: 4px;
+}
+
+/* Tooltip styles */
+.custom-tooltip {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip-label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #2d3748;
+}
+
+.tooltip-value {
+  margin: 3px 0;
+  color: #4a5568;
+}
+
+/* Text color classes */
+.positive {
+  color: #38a169;
+}
+
+.negative {
+  color: #e53e3e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .region-metrics, .stage-metrics, .agent-metrics {
+    flex-direction: column;
+  }
+  
+  .panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

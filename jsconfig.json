@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    // Allow absolute imports from both frontend/src and backend/src
+    "baseUrl": ".",
+    "paths": {
+      "@frontend/*": ["frontend/src/*"],
+      "@backend/*": ["backend/src/*"]
+    },
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    // Allow JavaScript files to be compiled
+    "allowJs": true,
+    // Skip type checking of declaration files
+    "skipLibCheck": true,
+    // Enables default imports from modules with no default export
+    "esModuleInterop": true,
+    // Allow default imports from modules without a default export
+    "allowSyntheticDefaultImports": true,
+    // Enable all strict type-checking options
+    "strict": true,
+    // Disallow inconsistently-cased references to the same file
+    "forceConsistentCasingInFileNames": true,
+    // Report errors for fallthrough cases in switch statements
+    "noFallthroughCasesInSwitch": true,
+    // Use the latest module system
+    "module": "esnext",
+    // Use Node.js module resolution
+    "moduleResolution": "node",
+    // Allow importing .json files
+    "resolveJsonModule": true,
+    // Ensure each file can be safely transpiled without relying on other imports
+    "isolatedModules": true,
+    // Use the new JSX transform (React 17+)
+    "jsx": "react-jsx",
+    // Enable type-checking for JavaScript files
+    "checkJs": true
+  },
+  // Include both frontend and backend source directories
+  "include": [
+    "frontend/src",
+    "backend/src"
+  ]
+}

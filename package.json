@@ -1,0 +1,17 @@
+{
+  "name": "sales-presales-tracker",
+  "version": "1.0.0",
+  "description": "Sales and Presales Tracking Dashboard",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend && npm start",
+    "install:all": "npm install && npm run install:frontend && npm run install:backend",
+    "install:frontend": "cd frontend && npm install",
+    "install:backend": "cd backend && npm install"
+  }
+}
