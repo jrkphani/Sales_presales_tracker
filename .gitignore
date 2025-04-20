@@ -52,5 +52,11 @@ self_client.json
 
 # OS specific
 .DS_Store
-Thumbs.db 
-node_modules
+Thumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
