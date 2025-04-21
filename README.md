@@ -1,18 +1,17 @@
 # Sales and Presales Tracking Dashboard
 
-A full-stack application for tracking sales and presales data with a React frontend and Node.js backend.
+A full-stack application for tracking sales and presales data with a React frontend and Python backend.
 
 ## Project Structure
 
 ```
 sales-presales-tracker/
-├── backend/               # Node.js backend services
-│   ├── src/
-│   │   ├── services/     # Zoho integration and other services
-│   │   ├── data/         # Data processing and storage
-│   │   └── scripts/      # Utility scripts
-│   └── package.json      # Backend dependencies
-├── frontend/             # React frontend application
+├── backend/               # Python backend services
+│   ├── app/               # Application package
+│   ├── scripts/           # Utility scripts (Python)
+│   ├── main.py            # Backend entry point
+│   └── requirements.txt   # Backend dependencies
+├── frontend/              # React frontend application
 │   ├── src/
 │   │   ├── components/   # React components
 │   │   ├── services/     # Frontend services
@@ -24,19 +23,31 @@ sales-presales-tracker/
 
 ## Setup Instructions
 
-1. Install dependencies:
+1. Install frontend dependencies:
    ```bash
-   npm run install:all
+   cd frontend
+   npm install
    ```
 
-2. Start the frontend development server:
+2. Install backend dependencies:
    ```bash
-   npm run start:frontend
+   cd ../backend
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   pip install -r requirements.txt
    ```
 
-3. Start the backend services:
+3. Start the frontend development server:
    ```bash
-   npm run start:backend
+   cd ../frontend
+   npm start
+   ```
+
+4. Start the backend services:
+   ```bash
+   cd ../backend
+   source venv/bin/activate  # If not already activated
+   python main.py
    ```
 
 ## Environment Variables
